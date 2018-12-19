@@ -7,7 +7,7 @@ http://localhost:4000/graphql
 
 [테스트]
 
-(1) 
+(1) 임의의 user정보 DB로부터 가져오기
 
 {
   getUser {
@@ -17,7 +17,7 @@ http://localhost:4000/graphql
 }
 
 
-(2)
+(2) 특정id 의 user정보 DB로부터 가져오기
 {
   getUser(id:2) {
     id
