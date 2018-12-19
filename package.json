@@ -1,0 +1,23 @@
+{
+  "name": "cl-grqphQL",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nohup node app.js &",
+    "stop": "kill $(fuser -n tcp 8080 | awk '{print $NF}')",
+    "restart": "kill $(fuser -n tcp 8080 | awk '{print $NF}'); nohup node app.js > /dev/null 2>&1 &"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.6",
+    "graphql": "^0.10.3",
+    "graphql-server-express": "^1.0.0",
+    "graphql-tools": "^1.1.0",
+    "mysql": "^2.13.0"
+  }
+}
